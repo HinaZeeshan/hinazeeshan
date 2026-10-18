@@ -205,7 +205,7 @@ export default function ChatWidget() {
       {
         id: Date.now(),
         sender: 'bot',
-        text: `🎉 Thank you, ${leadName}! Your message has been sent directly to Hina's inbox (hqzqureshi@gmail.com).\n\nHina will review your requirement and reach out to you shortly via ${leadEmail}${leadPhone ? ` or Phone (${leadPhone})` : ''}!`,
+        text: `🎉 Thank you, ${leadName}! Your message has been received successfully.\n\nHina will review your requirements and reach out to you shortly!`,
         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       }
     ]);
@@ -340,11 +340,11 @@ export default function ChatWidget() {
                       <FiMail className="w-4 h-4" />
                       <span>Contact Hina Directly</span>
                     </div>
-                    <span className="text-[10px] text-text-muted">Direct to hqzqureshi@gmail.com</span>
+                    <span className="text-[10px] text-text-muted">Direct & Confidential</span>
                   </div>
                   
                   <p className="text-[11.5px] text-text-muted mb-3 leading-snug">
-                    Enter your details below — Hina will receive your message in her Gmail inbox and reach out to you shortly!
+                    Enter your details below — Hina will review your inquiry and reach out to you shortly!
                   </p>
 
                   <form onSubmit={handleLeadSubmit} className="space-y-2.5">
